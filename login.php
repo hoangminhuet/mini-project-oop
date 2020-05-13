@@ -13,7 +13,7 @@ if (isset($_REQUEST['submit'])) {
         $result = $user->db->query($sql2);
         $data = mysqli_fetch_array($result);
         if ($result != false) {
-            $_SESSION["user"] = $emailusername;
+            $_SESSION["user"] = $acc;
             $_SESSION['login'] = true;
             $_SESSION["uid"] = $data["uid"];
             header("location:index.php");

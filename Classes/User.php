@@ -60,15 +60,15 @@ class User
                 $_SESSION["uid"] = $data["uid"];
 
                 if (!empty($_POST["remember"])) {
-                    $hour = time() + 3600*24*30;
+                    $hour = time() + 3600 * 24 * 30;
                     setcookie("user_login", $_POST["emailusername"], $hour);
                     setcookie("pass_login", md5($_POST["password"]), $hour);
                 } else {
                     if (isset($_COOKIE["user_login"])) {
-                        setcookie("user_login", "", time()-$hour);
+                        setcookie("user_login", "", time() - $hour);
                     }
                     if (isset($_COOKIE["pass_login"])) {
-                        setcookie("pass_login", "", time()-$hour);
+                        setcookie("pass_login", "", time() - $hour);
                     }
                 }
                 header("location:index.php");

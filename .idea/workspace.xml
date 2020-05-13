@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="44420331-c3ee-45fb-92cf-f2ace7db6c8f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/Crud.php" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/Crud.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Classes/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/Classes/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +33,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="ide.date.format" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test_project" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -77,7 +78,9 @@
       <workItem from="1589263367758" duration="13721000" />
       <workItem from="1589279128379" duration="9160000" />
       <workItem from="1589300221283" duration="2296000" />
-      <workItem from="1589332430287" duration="7441000" />
+      <workItem from="1589332430287" duration="8647000" />
+      <workItem from="1589351313184" duration="297000" />
+      <workItem from="1589351664502" duration="1015000" />
     </task>
     <servers />
   </component>
@@ -105,10 +108,11 @@
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="627" y="244" width="655" height="621" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1589270640479" />
-    <state x="690" y="255" width="530" height="594" key="FileChooserDialogImpl" timestamp="1588827580895">
-      <screen x="0" y="28" width="1920" height="1052" />
+    <state x="690" y="257" width="530" height="594" key="FileChooserDialogImpl" timestamp="1589352256119">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="690" y="255" width="530" height="594" key="FileChooserDialogImpl/0.28.1920.1052@0.28.1920.1052" timestamp="1588827580895" />
+    <state x="690" y="257" key="FileChooserDialogImpl/0.30.1920.1050@0.30.1920.1050" timestamp="1589352256119" />
     <state width="1862" height="262" key="GridCell.Tab.0.bottom" timestamp="1589203369644">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
@@ -133,23 +137,25 @@
       <screen x="0" y="28" width="1920" height="1052" />
     </state>
     <state x="726" y="465" width="438" height="178" key="NewPhpFileDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1588908763113" />
-    <state x="325" y="101" key="SettingsEditor" timestamp="1588924082262">
-      <screen x="0" y="28" width="1920" height="1052" />
+    <state x="325" y="103" key="SettingsEditor" timestamp="1589351737333">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="325" y="101" key="SettingsEditor/0.28.1920.1052@0.28.1920.1052" timestamp="1588924082262" />
-    <state x="540" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1589332429276">
+    <state x="325" y="103" key="SettingsEditor/0.30.1920.1050@0.30.1920.1050" timestamp="1589351737333" />
+    <state x="540" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1589354959568">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="540" y="343" key="com.intellij.ide.util.TipDialog/0.28.1920.1052@0.28.1920.1052" timestamp="1588899606117" />
-    <state x="540" y="344" key="com.intellij.ide.util.TipDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1589332429276" />
-    <state x="540" y="253" key="run.anything.popup" timestamp="1589269991616">
+    <state x="540" y="344" key="com.intellij.ide.util.TipDialog/0.30.1920.1050@0.30.1920.1050" timestamp="1589354959568" />
+    <state x="578" y="239" key="run.anything.popup" timestamp="1589351971771">
       <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="540" y="251" key="run.anything.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1588901428239" />
-    <state x="540" y="253" key="run.anything.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1589269991616" />
-    <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup" timestamp="1588923911198">
-      <screen x="0" y="28" width="1920" height="1052" />
+    <state x="578" y="239" key="run.anything.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1589351971771" />
+    <state x="539" y="47" width="840" height="1033" key="search.everywhere.popup" timestamp="1589351959651">
+      <screen x="0" y="30" width="1920" height="1050" />
     </state>
     <state x="539" y="45" width="840" height="1034" key="search.everywhere.popup/0.28.1920.1052@0.28.1920.1052" timestamp="1588923911198" />
+    <state x="539" y="47" width="840" height="1033" key="search.everywhere.popup/0.30.1920.1050@0.30.1920.1050" timestamp="1589351959651" />
   </component>
 </project>

@@ -16,16 +16,14 @@ if (isset($_REQUEST["register"])) {
     if (empty($password)) {
         $msg_error = "Please enter password!";
     }
-    if(!empty($name) && !empty($username) && !empty($email) && !empty($password)) {
+    if (!empty($name) && !empty($username) && !empty($email) && !empty($password)) {
         $register = $user->register($username, $password, $name, $email);
         if ($register) {
             header("location:login.php");
         } else {
             $msg_error = "Something went wrong. Please try again!";
         }
-    }
-    else
-    {
+    } else {
         $msg_error = "Please enter your details!";
     }
 }
