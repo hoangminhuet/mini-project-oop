@@ -3,6 +3,18 @@ include_once('./Classes/User.php');
 include_once("./Classes/Crud.php");
 $user = new User();
 $crud = new Crud();
+
+if (isset($_COOKIE["user_login"]) && isset($_COOKIE["pass_login"])) {
+    $acc = $_COOKIE["user_login"];
+    $pass = $_COOKIE["pass_login"];
+    $sql2 = "Select * from users where uemail='$acc' or uname='$acc' and upass='$pass'";
+    $result = $user->db->query($sql2);
+    $data = mysqli_fetch_array($result);
+    if ($result != false) {
+        $_SESSION['login'] = true;
+        $_SESSION["uid"] = $data["uid"];
+    }
+}
 $uid = $_SESSION['uid'];
 if (!$user->get_session()) {
     header("location:login.php");
